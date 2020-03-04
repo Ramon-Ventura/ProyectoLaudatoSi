@@ -109,6 +109,13 @@ header label i {
 }
 
 /*Diseno del inicio*/
+.hero {
+    height: 28em;
+    background: url(../images/inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .a-inicio {
     width: 90%;
     max-width: 1000px;
