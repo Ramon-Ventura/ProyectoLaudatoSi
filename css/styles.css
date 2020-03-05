@@ -166,3 +166,13 @@ footer div {
 footer p {
     text-align: right;
 }
+/*Diseñando los articulos*/
+.articulos {
+    width: 90%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: 2rem auto;
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
