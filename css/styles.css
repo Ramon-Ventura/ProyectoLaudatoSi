@@ -1,0 +1,178 @@
+:root {
+    --primary: #27ae60;
+    --secondary: #2980b9;
+    --white: #fff;
+    --gray: #f2f2f2;
+    --dark: #2c3e50;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    padding-top: 3.25em;
+    background-color: var(--gray);
+    font-family: "Roboto",sans-serif;
+    font-size: 1em;
+}
+header {
+    background-color: var(--primary);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+/*Main navigation styles*/
+.logo-titulo {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Nunito',sans-serif;
+}
+
+.logo-titulo i {
+    font-size: 2em;
+}
+
+#btn-menu{
+    display: none;
+}
+
+#btn-menu:checked + .menu .enlaces{
+    margin-left: 25%;
+}
+header label {
+    padding: 1em;
+}
+
+header label i {
+    font-size: 2em;
+    color: white;
+}
+.menu {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.enlaces {
+    margin-top: 19em;
+    margin-left: 100%;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primary);
+    transition: all 0.5s;
+}
+
+.enlaces a{
+    font-size: 1.2em;
+    padding: 1em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.enlaces a:hover {
+    background-color: whitesmoke;
+    color: var(--primary);
+}
+@media(min-width:768px) {
+    header label {
+        display: none;
+    }
+
+    .enlaces {
+        justify-content: space-between;
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: row;
+        position: unset;
+    }
+
+    .enlaces a:first-of-type{
+        margin-left: auto;
+    }
+}
+
+/*Diseno del inicio*/
+.hero {
+    margin-top: 2em;
+    height: 28em;
+    background: url(../images/inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.a-inicio {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    
+    border-bottom: 0.25em solid var(--secondary);
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+@media(min-width:768px){
+    .a-inicio {
+        flex-direction: row;
+    }
+    .inicio-imagen {
+        margin-right: 1em;
+    }
+}
+.a-inicio div {
+    flex: 1;
+}
+
+.inicio-imagen {
+    padding: 8em 0;
+    background-image: url(../images/papa.jpg);
+    background-size: 100% 100%;
+}
+/*Diseñando el pie de pagina*/
+footer {
+    color: var(--white);
+    width: 100%;
+    background-color: var(--dark);
+}
+
+footer div {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0.5em;
+}
+
+footer p {
+    text-align: right;
+}
+/*Diseñando los articulos*/
+.articulos {
+    width: 90%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: 2rem auto;
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
