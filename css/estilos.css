@@ -1,0 +1,22 @@
+/*Tamano de la imagen*/
+img {
+
+    max-width: 50%;
+
+  }
+
+/* Colocar la imagen a la izquierda */
+@media (min-width: 768px) {
+    .entry img {
+      width: 90em;
+      height: 60;
+      image-orientation: initial;
+      margin: 0 1.25em 0 0;
+    }
+  }
+  .entry p {
+    text-align: justify;
+  }
+  .alin p {
+      text-align: center;
+  }
