@@ -3,7 +3,7 @@
     --secondary: #2980b9;
     --white: #fff;
     --gray: #f2f2f2;
-    --dark: #212121;
+    --dark: #2c3e50;
 }
 html {
     box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
     font-size: 1em;
 }
 header {
-    background-color: #27ae60;
+    background-color: var(--primary);
     position: fixed;
     width: 100%;
     top: 0;
@@ -76,7 +76,7 @@ header label i {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #27ae60;
+    background-color: var(--primary);
     transition: all 0.5s;
 }
 
@@ -88,7 +88,7 @@ header label i {
 }
 .enlaces a:hover {
     background-color: whitesmoke;
-    color: #27ae60;
+    color: var(--primary);
 }
 @media(min-width:768px) {
     header label {
@@ -110,10 +110,11 @@ header label i {
 
 /*Diseno del inicio*/
 .hero {
+    margin-top: 2em;
     height: 28em;
     background: url(../images/inicio.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .a-inicio {
@@ -123,6 +124,7 @@ header label i {
     background: #fff;
     padding: 2rem;
     
+    border-bottom: 0.25em solid var(--secondary);
     background: var(--white);
     display: flex;
     flex-direction: column;
@@ -146,4 +148,31 @@ header label i {
     padding: 8em 0;
     background-image: url(../images/papa.jpg);
     background-size: 100% 100%;
+}
+/*Diseñando el pie de pagina*/
+footer {
+    color: var(--white);
+    width: 100%;
+    background-color: var(--dark);
+}
+
+footer div {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0.5em;
+}
+
+footer p {
+    text-align: right;
+}
+/*Diseñando los articulos*/
+.articulos {
+    width: 90%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: 2rem auto;
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
