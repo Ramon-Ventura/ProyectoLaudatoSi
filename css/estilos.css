@@ -16,15 +16,16 @@ html {
 /*Tamano de la imagen*/
 img {
   
-    max-width: 50%;
-
+    max-width: 90%;
+    width: 15em;
+    height: 10em;
   }
 
 /* Colocar la imagen a la izquierda */
 @media (min-width: 768px) {
     .entry img {
       width: 90em;
-      height: 60;
+      height: 90;
       image-orientation: initial;
       margin: 0 1.25em 0 0;
     }
