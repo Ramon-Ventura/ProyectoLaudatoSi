@@ -126,10 +126,12 @@ header label i {
 /*Diseno del inicio*/
 .hero {
   height: 28em;
-  background: url(../images/inicio.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: url(../images/agriculture-1807581_1920.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .a-inicio {
   width: 90%;
