@@ -17,10 +17,14 @@ html {
 img {
   
     max-width: 90%;
+    ]
+  }
+  .Imagen {
+  
+    max-width: 90%;
     width: 15em;
     height: 10em;
   }
-
 /* Colocar la imagen a la izquierda */
 @media (min-width: 768px) {
     .entry img {
