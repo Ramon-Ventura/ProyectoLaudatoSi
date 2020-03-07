@@ -5,46 +5,54 @@
     --gray: #f2f2f2;
     --dark: #2c3e50;
 }
+
 html {
     box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 body {
     padding-top: 3.25em;
     background-color: var(--gray);
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1em;
 }
+
 header {
     background-color: var(--primary);
     position: fixed;
     width: 100%;
     top: 0;
 }
+
+
 /*Main navigation styles*/
+
 .logo-titulo {
     text-decoration: none;
     color: #ecf0f1;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .logo-titulo i {
     font-size: 2em;
 }
 
-#btn-menu{
+#btn-menu {
     display: none;
 }
 
-#btn-menu:checked + .menu .enlaces{
+#btn-menu:checked+.menu .enlaces {
     margin-left: 25%;
 }
+
 header label {
     padding: 1em;
 }
@@ -53,6 +61,7 @@ header label i {
     font-size: 2em;
     color: white;
 }
+
 .menu {
     width: 90%;
     max-width: 1000px;
@@ -80,21 +89,22 @@ header label i {
     transition: all 0.5s;
 }
 
-.enlaces a{
+.enlaces a {
     font-size: 1.2em;
     padding: 1em;
     text-decoration: none;
     color: whitesmoke;
 }
+
 .enlaces a:hover {
     background-color: whitesmoke;
     color: var(--primary);
 }
+
 @media(min-width:768px) {
     header label {
         display: none;
     }
-
     .enlaces {
         justify-content: space-between;
         margin-top: 0;
@@ -102,13 +112,14 @@ header label i {
         flex-direction: row;
         position: unset;
     }
-
-    .enlaces a:first-of-type{
+    .enlaces a:first-of-type {
         margin-left: auto;
     }
 }
 
+
 /*Diseno del inicio*/
+
 .hero {
     margin-top: 2em;
     height: 28em;
@@ -123,7 +134,6 @@ header label i {
     margin: 2rem auto;
     background: #fff;
     padding: 2rem;
-    
     border-bottom: 0.25em solid var(--secondary);
     background: var(--white);
     display: flex;
@@ -132,7 +142,7 @@ header label i {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
     .a-inicio {
         flex-direction: row;
     }
@@ -140,6 +150,7 @@ header label i {
         margin-right: 1em;
     }
 }
+
 .a-inicio div {
     flex: 1;
 }
@@ -149,7 +160,10 @@ header label i {
     background-image: url(../images/papa.jpg);
     background-size: 100% 100%;
 }
+
+
 /*Diseñando el pie de pagina*/
+
 footer {
     color: var(--white);
     width: 100%;
@@ -166,7 +180,10 @@ footer div {
 footer p {
     text-align: right;
 }
+
+
 /*Diseñando los articulos*/
+
 .articulos {
     width: 90%;
     max-width: 1000px;
