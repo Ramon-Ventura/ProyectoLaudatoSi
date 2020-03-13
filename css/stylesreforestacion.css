@@ -178,25 +178,49 @@ footer p {
 }
 .imagenwill {
     padding: 8em 0;
-    background-image: url(../ImagenesWill/Deforestacion.jpg);
+    background-image: url(../ImagenesWill/reforestacion.jpg);
     background-size: 60% 100%;
     background-repeat: no-repeat;
 }
 .imagenwill2 {
     padding: 8em 0;
-    background-image: url(../ImagenesWill/plaga.jpg);
+    background-image: url(../ImagenesWill/reforestacion1.jpg);
     background-size: 60% 100%;
     background-repeat: no-repeat;
 }
 .imagenwill3{
     padding: 8em 0;
-    background-image: url(../ImagenesWill/tala.jpg);
+    background-image: url(../ImagenesWill/reforestacion2.jpg);
     background-size: 60% 100%;
     background-repeat: no-repeat;
 }
 .imagenwill4{
     padding: 8em 0;
+    background-image: url(../ImagenesWill/prohibido-tirar-basura.jpg);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+}
+.imagenwill5 {
+    padding: 8em 0;
+    background-image: url(../ImagenesWill/Deforestacion.jpg);
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+}
+.imagenwill6 {
+    padding: 8em 0;
     background-image: url(../ImagenesWill/deforestacion2.jpg);
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+}
+.imagenwill7{
+    padding: 8em 0;
+    background-image: url(../ImagenesWill/tala.jpg);
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+}
+.imagenwill8{
+    padding: 8em 0;
+    background-image: url(../ImagenesWill/plaga.jpg);
     background-size: 60% 100%;
     background-repeat: no-repeat;
 }
