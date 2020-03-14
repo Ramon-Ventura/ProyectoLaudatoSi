@@ -1,0 +1,121 @@
+:root {
+  --primary: #27ae60;
+  --secondary: #2980b9;
+  --white: #fff;
+  --gray: #f2f2f2;
+  --dark: #2c3e50;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*Tamano de la imagen*/
+img {
+  
+    max-width: 90%;
+    ]
+  }
+  .Imagen {
+  
+    max-width: 90%;
+    width: 15em;
+    height: 10em;
+  }
+/* Colocar la imagen a la izquierda */
+@media (min-width: 768px) {
+    .entry img {
+      width: 90em;
+      height: 90;
+      image-orientation: initial;
+      margin: 0 1.25em 0 0;
+    }
+  }
+  .entry p {
+    text-align: justify;
+  }
+  .alin p {
+      text-align: center;
+  }
+
+  .noticias {
+    width: 50%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: 2rem auto;
+    background: var(--gray);
+    padding: 2rem;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+.justify-content-around {
+  -ms-flex-pack: distribute!important;
+  justify-content: space-around!important;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.tarjeta {
+  width: 25rem;
+  padding: 0;
+  margin: 1rem;
+  box-shadow: 5px 5px 25px #27ae60;
+}
+.text-center {
+  padding: 1rem;
+  text-align: center;
+}
+
+element.style {
+}
+.tarjeta {
+    width: 25rem;
+    padding: 0;
+    margin: 1rem;
+    box-shadow: 5px 5px 25px #27ae60;
+}
+.text-center {
+  padding: 1rem;
+    text-align: justify;
+}
+.text-center {
+  padding: 1rem;
+    text-align: justify!important;
+}
+.boton-personalizado {
+  text-decoration:none;
+  font-weight:600;
+  font-size:20px;
+  color:#ffffff;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:100px;
+  padding-right:100px;
+  
+  background-color:#27ae60;
+  text-align: justify;
+  }
+
+  @media (min-width: 768px) {
+    .boton-personalizado {
+      text-decoration:none;
+      font-weight:600;
+      font-size:20px;
+      color:#ffffff;
+      padding-top:20px;
+      padding-bottom:20px;
+      padding-left:40px;
+      padding-right:40px;
+      
+      background-color:#27ae60;
+      text-align: justify;
+    }
+  }
