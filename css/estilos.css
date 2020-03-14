@@ -67,7 +67,7 @@ img {
   width: 25rem;
   padding: 0;
   margin: 1rem;
-  box-shadow: 5px 5px 25px #888;
+  box-shadow: 5px 5px 25px #27ae60;
 }
 .text-center {
   padding: 1rem;
@@ -80,7 +80,7 @@ element.style {
     width: 25rem;
     padding: 0;
     margin: 1rem;
-    box-shadow: 5px 5px 25px #888;
+    box-shadow: 5px 5px 25px #27ae60;
 }
 .text-center {
   padding: 1rem;
