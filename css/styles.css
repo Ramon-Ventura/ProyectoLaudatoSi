@@ -272,6 +272,11 @@ footer .site-footer {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
+.articulos article {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .articulos article p {
   font-size: 1em;
   line-height: 2em;
@@ -279,6 +284,7 @@ footer .site-footer {
 
 .articulos article img {
   width: 100%;
+  max-width: 850px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -287,10 +293,21 @@ footer .site-footer {
 .articulos h1 {
   text-align: center;
 }
-.articulos h2 {
+
+.articulos .galeria img {
   margin-top: 2em;
 }
 
-.articulos .galeria img {
+/*
+.articulos article p,
+.articulos article h2,
+.articulos article h3,
+.articulos article hr {
+  width: 90%;
+  margin: 1em auto;
+}
+*/
+.articulos article h2,
+.articulos article h3 {
   margin-top: 2em;
 }
