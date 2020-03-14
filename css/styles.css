@@ -149,11 +149,15 @@ header label i {
 }
 .hero-content {
   width: 80%;
-  color: white;
+  color: var(--white);
   z-index: 1;
   font-weight: bold;
   text-align: center;
   font-size: 2em;
+}
+.hero-referencia {
+  font-size: 0.8em;
+  font-weight: normal;
 }
 .a-inicio {
   width: 90%;
@@ -216,6 +220,7 @@ header label i {
   text-align: center;
   text-transform: uppercase;
   margin-left: auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
 /*Diseñando el pie de pagina*/
@@ -231,9 +236,14 @@ footer .site-footer {
   margin: auto;
   padding: 0.5em;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-
+@media(min-width:768px){
+  footer .site-footer {
+    flex-direction: row;
+  }
+}
 .redes-sociales {
   flex: 1;
 }
