@@ -90,3 +90,32 @@ element.style {
   padding: 1rem;
     text-align: justify!important;
 }
+.boton-personalizado {
+  text-decoration:none;
+  font-weight:600;
+  font-size:20px;
+  color:#ffffff;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:100px;
+  padding-right:100px;
+  
+  background-color:#27ae60;
+  text-align: justify;
+  }
+
+  @media (min-width: 768px) {
+    .boton-personalizado {
+      text-decoration:none;
+      font-weight:600;
+      font-size:20px;
+      color:#ffffff;
+      padding-top:20px;
+      padding-bottom:20px;
+      padding-left:40px;
+      padding-right:40px;
+      
+      background-color:#27ae60;
+      text-align: justify;
+    }
+  }
