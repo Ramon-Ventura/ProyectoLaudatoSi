@@ -20,6 +20,7 @@ body {
   font-size: 1em;
 }
 header {
+  z-index: 2;
   background-color: var(--primary);
   position: fixed;
   width: 100%;
@@ -89,6 +90,7 @@ header label i {
 }
 
 .enlaces a {
+  flex: 1;
   font-size: 1.2em;
   padding: 1em;
   text-decoration: none;
@@ -123,48 +125,99 @@ header label i {
   }
 }
 
-/*Diseno del inicio*/
+/*DISENO DEL DE LA PAGINA DE INICIO*/
 .hero {
+  margin-top: 0.5em;
+  position: relative;
   height: 28em;
-  background: url(../images/agriculture-1807581_1920.jpg);
+  background: url(../images/agriculture-1807581_1920.jpg) no-repeat center;
+  overflow: hidden;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
+.hero::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.35);
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.hero-content {
+  width: 80%;
+  color: white;
+  z-index: 1;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
 .a-inicio {
   width: 90%;
   max-width: 1000px;
   margin: 2rem auto;
   background: #fff;
   padding: 2rem;
-
-  border-bottom: 0.25em solid var(--secondary);
+  border-bottom: 0.25em solid var(--primary);
   background: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
-@media (min-width: 768px) {
-  .a-inicio {
-    flex-direction: row;
-  }
-  .inicio-imagen {
-    margin-right: 1em;
-  }
-}
-.a-inicio div {
-  flex: 1;
+.a-inicio h2{
+  margin-top: 0em;
+  text-align: center;
+  font-weight: bold;
+  color: var(--secondary);
 }
 
-.inicio-imagen {
-  padding: 8em 0;
-  background-image: url(../images/papa.jpg);
-  background-size: 100% 100%;
+.contenido {
+  display: flex;
+  flex-direction: column;
 }
+@media(min-width:768px){
+  .contenido{
+    flex-direction: row;
+  }
+  .descripcion{
+    margin-left: 1em;
+    flex: 2;
+  }
+  .imagen {
+    flex: 1;
+  }
+}
+
+.imagen {
+  margin: auto;
+}
+
+.contenido img {
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.descripcion p {
+  text-align: justify;
+  line-height: 1.8em;
+}
+/*Diseño del boton*/
+.buttom {
+  display: block;
+  background-color: var(--secondary);
+  width: 9em;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
 /*Diseñando el pie de pagina*/
 footer {
   color: var(--white);
@@ -172,15 +225,31 @@ footer {
   background-color: var(--dark);
 }
 
-footer div {
+footer .site-footer {
   width: 90%;
   max-width: 1000px;
   margin: auto;
   padding: 0.5em;
+  display: flex;
+  align-items: center;
 }
 
-footer p {
+.redes-sociales {
+  flex: 1;
+}
+
+.redes-sociales i {
+  font-size: 2em;
+  margin-right: 0.2em;
+}
+.redes-sociales a {
+  text-decoration: none;
+  color: var(--white);
+}
+.copyright {
+  flex: 2;
   text-align: right;
+  color: var(--white);
 }
 /*Diseñando los articulos*/
 .articulos {
