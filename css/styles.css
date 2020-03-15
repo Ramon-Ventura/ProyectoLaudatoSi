@@ -137,7 +137,7 @@ header label i {
   align-items: center;
   justify-content: center;
   animation: slider 28s infinite linear;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 @keyframes slider {
@@ -181,8 +181,6 @@ header label i {
     overflow: hidden;
     background-size: cover;
   }
-  
-  
 }
 .hero::after {
   content: "";
@@ -318,8 +316,7 @@ footer .site-footer {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
-
-@media(min-width:768px){
+@media (min-width: 768px) {
   .articulos article {
     width: 90%;
     margin: 0 auto;
@@ -342,8 +339,15 @@ footer .site-footer {
 }
 .articulos h1 {
   text-align: center;
+  font-weight: bold;
 }
-
+.articulos hr,
+.articulos h1,
+.articulos h2,
+.articulos h3 {
+  font-weight: bold;
+  color: var(--secondary);
+}
 .articulos .galeria img {
   margin-top: 2em;
 }
