@@ -361,3 +361,9 @@ footer .site-footer {
 .articulos article h3 {
   margin-top: 2em;
 }
+
+.articulos article ul li {
+  margin-top: 1em;
+  line-height: 2em;
+  text-align: justify;
+}
