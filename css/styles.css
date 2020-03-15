@@ -130,12 +130,57 @@ header label i {
   margin-top: 0.5em;
   position: relative;
   height: 28em;
-  background: url(../images/agriculture-1807581_1920.jpg) no-repeat center;
+  background: url(../slider/slider1.jpeg) no-repeat center;
   overflow: hidden;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slider 28s infinite linear;
+  transition: all 0.1s ease-in-out;
+}
+
+@keyframes slider {
+  0% {
+    background: url(../slider/slider1.jpeg) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  25% {
+    background: url(../slider/slider1.jpeg) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  26% {
+    background: url(../slider/slider2.jpeg) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  50% {
+    background: url(../slider/slider2.jpeg) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  51% {
+    background: url(../slider/slider3.jfif) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  75% {
+    background: url(../slider/slider3.jfif) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  76% {
+    background: url(../slider/slider4.jpeg) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
+  100% {
+    background: url(../slider/slider4.jpeg) no-repeat center;
+    overflow: hidden;
+    background-size: cover;
+  }
 }
 .hero::after {
   content: "";
@@ -265,21 +310,23 @@ footer .site-footer {
 .articulos {
   width: 90%;
   max-width: 1000px;
-  text-align: justify;
   margin: 2rem auto;
   background: var(--white);
   padding: 2rem;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
-.articulos article {
-  width: 100%;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .articulos article {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .articulos article p {
   font-size: 1em;
   line-height: 2em;
+  text-align: justify;
 }
 
 .articulos article img {
@@ -292,8 +339,15 @@ footer .site-footer {
 }
 .articulos h1 {
   text-align: center;
+  font-weight: bold;
 }
-
+.articulos hr,
+.articulos h1,
+.articulos h2,
+.articulos h3 {
+  font-weight: bold;
+  color: var(--secondary);
+}
 .articulos .galeria img {
   margin-top: 2em;
 }
@@ -310,4 +364,10 @@ footer .site-footer {
 .articulos article h2,
 .articulos article h3 {
   margin-top: 2em;
+}
+
+.articulos article ul li {
+  margin-top: 1em;
+  line-height: 2em;
+  text-align: justify;
 }
