@@ -323,7 +323,7 @@ footer .site-footer {
 }
 
 @media (min-width: 768px) {
-  .articulos article {
+  .articulos article,.contenido-inicio {
     width: 90%;
     margin: 0 auto;
   }
@@ -382,4 +382,91 @@ footer .site-footer {
 
 .autor {
   font-style: italic;
+}
+
+.referencia a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+
+.button {
+  background-color: var(--secondary);
+  padding: 1em 3em;
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+  border: none;
+}
+form {
+  margin: 6em auto;
+  background-color: var(--primary);
+  padding: 2em;
+}
+form h2 {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 2em;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  form {
+    max-width: 1000px;
+    margin: 6em auto;
+  }
+  form legend {
+    margin-bottom: 2em;
+  }
+  .fields {
+    display: flex;
+    justify-content: space-between;
+    /* Todos los elementos de fields se convierten en un solo
+    elemento flex */
+    flex-wrap: wrap;
+  }
+  .field {
+    flex-direction: row;
+    flex: 0 0 calc(50% - 1em);
+  }
+  .field label {
+    flex: 0 0 6em;
+  }
+}
+.field label {
+  color: var(--white);
+}
+.field input[type="text"],
+.field input[type="mail"],
+.field textarea {
+  flex: 1;
+  height: 2em;
+  width: 80%;
+}
+.width-100 {
+  flex: 0 0 100%;
+}
+.field textarea {
+  height: 4em;
+}
+.send {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .send {
+    justify-content: flex-end;
+  }
 }
